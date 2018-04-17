@@ -6,7 +6,6 @@ class BookDetail extends Component {
         if(!this.props.book){
             return <div>Select a book to show details.</div>
         }
-
         return (
             <div>
                 <div>Title: {this.props.book.title}</div>
