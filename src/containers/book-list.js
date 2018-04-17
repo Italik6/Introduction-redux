@@ -4,19 +4,19 @@ import { selectBook } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
 class BookList extends Component {
-    renderList(){
+    renderList() {
         return this.props.books.map((book) => {
             return (
                 <li key={book.title} 
                     className="list-group-item" 
                     onClick={() => this.props.selectBook(book)}>
-                    {book.title}
+                    {book.id}. {book.title}
                 </li>
             )
         })
     }
 
-    render () {
+    render() {
         return (
             <div>
                 <h3 className="m-t-2 m-b-1">Books to read:</h3>
@@ -27,7 +27,6 @@ class BookList extends Component {
         );
     } 
 }
-
 // Redux part
 function mapStateToProps (state) {
     return {

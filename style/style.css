@@ -2,17 +2,14 @@
     cursor: pointer;
 }
 
-.list-group-item:hover{
+.list-group-item:hover {
     background-color: #d7dfea;
-}
-
-.active-item {
-    background-color: #d7dfea !important;
 }
 
 .m-t-2 {
     margin-top: 20px;
 }
+
 .m-b-1 {
     margin-bottom: 10px;
 }
