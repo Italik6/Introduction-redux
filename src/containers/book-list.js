@@ -19,7 +19,7 @@ class BookList extends Component {
     render () {
         return (
             <div>
-                <h3>Books to read:</h3>
+                <h3 className="m-t-2 m-b-1">Books to read:</h3>
                 <ul className="list-group col-sm-4">
                     {this.renderList()}
                 </ul>
